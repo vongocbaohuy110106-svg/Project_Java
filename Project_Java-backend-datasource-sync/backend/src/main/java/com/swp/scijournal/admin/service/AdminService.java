@@ -14,6 +14,7 @@ public class AdminService {
 
     public void runSync() {
         String[] keywords = {"Artificial Intelligence", "Machine Learning", "Data Science"};
+        
         for (String keyword : keywords) {
             syncService.syncDataByKeyword(keyword, 10);
         }
